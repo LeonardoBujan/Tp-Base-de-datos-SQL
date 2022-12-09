@@ -38,7 +38,7 @@
 
 ## Ejercicio 7
 
-### **Calcular la suma de los saldos de los usuarios de la compañia telefónica NEXTEL*
+### *Calcular la suma de los saldos de los usuarios de la compañia telefónica NEXTEL*
 
   SELECT SUM(saldo) AS sumaSaldos FROM tblusuarios WHERE compañia = 'NEXTEL';
 
@@ -132,13 +132,13 @@
 
 ### *Listar las diferentes marcas de celular en orden alfabético descendentemente*
 
-  SELECT DISTINCT marca FROM tblusuarios ORDER BY marca DESC
+  SELECT DISTINCT marca FROM tblusuarios ORDER BY marca DESC;
 
 ## Ejercicio 22
 
 ### *Listar las diferentes compañias en orden alfabético aleatorio*
 
-  SELECT DISTINCT compañia FROM tblusuarios ORDER BY RAND()
+  SELECT DISTINCT compañia FROM tblusuarios ORDER BY RAND();
 
 ## Ejercicio 23
 
@@ -162,13 +162,13 @@
 
 ### *Listar nombre y teléfono de los usuarios con teléfono que no sea de la marca BLACKBERRY*
 
-  SELECT nombre, telefono FROM tblusuarios WHERE marca NOT IN ('BLACKBERRY')
+  SELECT nombre, telefono FROM tblusuarios WHERE marca NOT IN ('BLACKBERRY');
 
 ## Ejercicio 27
 
 ### *Listar el login de los usuarios con nivel 3*
 
-  SELECT usuario AS Login FROM tblusuarios WHERE nivel = 3
+  SELECT usuario AS Login FROM tblusuarios WHERE nivel = 3;
 
 ## Ejercicio 28
 
@@ -186,8 +186,8 @@
 
 ### *Listar las diferentes compañias en orden alfabético descendentemente*
 
-  SELECT distinct(compañia) FROM tblusuarios ORDER BY compañia DESC
+  SELECT distinct(compañia) FROM tblusuarios ORDER BY compañia DESC;
 
 ### Otra forma de resolver
 
-  SELECT compañia FROM tblusuarios GROUP BY compañia DESC
+  SELECT compañia FROM tblusuarios GROUP BY compañia DESC;
